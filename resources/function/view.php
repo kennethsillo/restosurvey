@@ -41,7 +41,7 @@ public function viewAll(){
   <nav class="navbar navbar-expand-sm navbar-light">
     <div class="container">
         <a class="navbar-brand" href="#"><IMG SRC="resources/img/logo2.png" ALT="Logo" WIDTH=60 HEIGHT=60></a>
-          <h1 class="" style="margin-left:60vh;">REPORT TABLE</h1>
+          <h1 class="" style="margin-left:45vh;">REPORT TABLE</h1>
           <ul class="navbar-nav ml-auto navbar-light">
             <form action="" method="GET" class="form-inline my-2 my-lg-0">
               <li class="nav-item"><a class="nav-link text-dark mr-3 mt-sm-3" href="index.php">Register</a></li>
