@@ -9,7 +9,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
+  <link href="vendor/css/bootstrap.min.css" rel="stylesheet">
 
   <link href="resources/css/style.css" rel="stylesheet">
 
@@ -25,92 +25,211 @@
   <nav class="navbar navbar-expand-sm navbar-light">
     <div class="container">
         <a class="navbar-brand" href="#"><IMG SRC="resources/img/logo2.png" ALT="Logo" WIDTH=60 HEIGHT=60></a>
-    </div>
-  </nav>
-</header>
+          <button class="navbar-toggler bg-white" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="navbar-nav ml-auto navbar-light">
+                <form action="" method="GET" class="form-inline my-2 my-lg-0">
+                  <li class="nav-item"><a class="nav-link text-dark mr-3 mt-sm-3" href="report.php">View</a></li>
+                </form>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
 
 <body>
   <div class="header">
-    <h1 class="text-center">Survey</h1>
+    <h1 class="text-center mt-5">Survey</h1>
   </div>
   <div class="instruction">
   </br>
   <div class="level">
     <h5 class="text-center">1: Very Poor | 2: Poor | 3: Fair | 4: Very Good | 5: Excellent</h5>
   </div>
+</div>
   <div class="container">
     <form method="POST" action="">
       <div class="row">
-        <div class="form-group col-12">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter your name" name="name">
+        <div class="form-group col-3 mt-3">
+          <input type="text" class="form-control text-center" id="name" aria-describedby="emailHelp" placeholder="Enter your name" name="name" style="margin-left:59vh;">
         </div>
       </br>
 
-        <div class="form-group col-12">
+        <div class="col-12 text-center">
           <label for="name">How good is our food?</label>
         </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-          <label class="custom-control-label" for="one">1</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-          <label class="custom-control-label" for="two">2</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-          <label class="custom-control-label" for="three">3</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-          <label class="custom-control-label" for="four">4</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-          <label class="custom-control-label" for="five">5</label>
+
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" style="margin-left:59vh;" name="rb1"> 1
+          </label>
         </div>
 
-        <div class="form-group col-12">
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="rb1"> 2
+            </label>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="rb1"> 3
+            </label>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="rb1"> 4
+            </label>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="rb1"> 5
+            </label>
+          </div>
+
+        <div class="col-12 text-center">
           <label for="name">How good is our place?</label>
         </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-          <label class="custom-control-label" for="one">1</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-          <label class="custom-control-label" for="two">2</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-          <label class="custom-control-label" for="three">3</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-          <label class="custom-control-label" for="four">4</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-          <label class="custom-control-label" for="five">5</label>
+
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" style="margin-left:59vh;" name="rb2"> 1
+          </label>
         </div>
 
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="rb2"> 2
+            </label>
+          </div>
 
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="rb2"> 3
+            </label>
+          </div>
 
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="rb2"> 4
+            </label>
+          </div>
 
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="rb2"> 5
+            </label>
+          </div>
+
+        <div class="col-12 text-center">
+          <label for="name">How good is our staff?</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" style="margin-left:59vh;" name="rb3"> 1
+          </label>
+        </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="rb3"> 2
+            </label>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="rb3"> 3
+            </label>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="rb3"> 4
+            </label>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="rb3"> 5
+            </label>
+          </div>
+
+        <div class="col-12 text-center">
+          <label for="name">How good is our service?</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" style="margin-left:59vh;" name="rb4"> 1
+          </label>
+        </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="rb4"> 2
+            </label>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="rb4"> 3
+            </label>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="rb4"> 4
+            </label>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="rb4"> 5
+            </label>
+          </div>
+
+        <div class="col-12 text-center">
+          <label for="name">Overall satisfaction</label>
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" style="margin-left:59vh;" name="rb5"> 1
+          </label>
+        </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="rb5"> 2
+            </label>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="rb5"> 3
+            </label>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="rb5"> 4
+            </label>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="rb5"> 5
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3" style="margin-left:72vh;">Submit</button>
       </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-  </div>
 
 </form>
-
 </body>
-
-
-
-
-
-
 </html>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
