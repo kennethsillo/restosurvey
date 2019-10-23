@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Oct 23, 2019 at 08:45 AM
+-- Generation Time: Oct 23, 2019 at 08:49 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.18
 
@@ -38,7 +38,14 @@ CREATE TABLE IF NOT EXISTS `survey` (
   `f4` varchar(100) NOT NULL,
   `f5` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `survey`
+--
+
+INSERT INTO `survey` (`id`, `name`, `f1`, `f2`, `f3`, `f4`, `f5`) VALUES
+(1, 'Vincent', '3', '5', '5', '3', '4');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
