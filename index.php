@@ -1,3 +1,10 @@
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'].'/survey/resources/functions/insert.php';
+if (isset($_POST['submit'])) {
+$insert = new insert($_POST['name'],$_POST['rb1'],$_POST['rb2'],$_POST['rb3'],$_POST['rb4'],$_POST['rb5']);
+$insert -> insertData();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,31 +68,31 @@
 
         <div class="form-check">
           <label class="form-check-label">
-            <input type="radio" class="form-check-input" style="margin-left:59vh;" name="rb1"> 1
+            <input type="radio" class="form-check-input" style="margin-left:59vh;" value="1" name="rb1"> 1
           </label>
         </div>
 
           <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="rb1"> 2
+              <input type="radio" class="form-check-input" value="2" name="rb1"> 2
             </label>
           </div>
 
           <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="rb1"> 3
+              <input type="radio" class="form-check-input" value="3" name="rb1"> 3
             </label>
           </div>
 
           <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="rb1"> 4
+              <input type="radio" class="form-check-input" value="4" name="rb1"> 4
             </label>
           </div>
 
           <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="rb1"> 5
+              <input type="radio" class="form-check-input" value="5" name="rb1"> 5
             </label>
           </div>
 
@@ -95,31 +102,31 @@
 
         <div class="form-check">
           <label class="form-check-label">
-            <input type="radio" class="form-check-input" style="margin-left:59vh;" name="rb2"> 1
+            <input type="radio" class="form-check-input" style="margin-left:59vh;" value="1" name="rb2"> 1
           </label>
         </div>
 
           <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="rb2"> 2
+              <input type="radio" class="form-check-input" value="2" name="rb2"> 2
             </label>
           </div>
 
           <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="rb2"> 3
+              <input type="radio" class="form-check-input" value="3" name="rb2"> 3
             </label>
           </div>
 
           <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="rb2"> 4
+              <input type="radio" class="form-check-input" value="4" name="rb2"> 4
             </label>
           </div>
 
           <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="rb2"> 5
+              <input type="radio" class="form-check-input" value="5" name="rb2"> 5
             </label>
           </div>
 
@@ -129,31 +136,31 @@
 
         <div class="form-check">
           <label class="form-check-label">
-            <input type="radio" class="form-check-input" style="margin-left:59vh;" name="rb3"> 1
+            <input type="radio" class="form-check-input" style="margin-left:59vh;" value="1" name="rb3"> 1
           </label>
         </div>
 
           <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="rb3"> 2
+              <input type="radio" class="form-check-input" value="2" name="rb3"> 2
             </label>
           </div>
 
           <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="rb3"> 3
+              <input type="radio" class="form-check-input" value="3" name="rb3"> 3
             </label>
           </div>
 
           <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="rb3"> 4
+              <input type="radio" class="form-check-input" value="4" name="rb3"> 4
             </label>
           </div>
 
           <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="rb3"> 5
+              <input type="radio" class="form-check-input" value="5" name="rb3"> 5
             </label>
           </div>
 
@@ -163,31 +170,31 @@
 
         <div class="form-check">
           <label class="form-check-label">
-            <input type="radio" class="form-check-input" style="margin-left:59vh;" name="rb4"> 1
+            <input type="radio" class="form-check-input" style="margin-left:59vh;" value="1" name="rb4"> 1
           </label>
         </div>
 
           <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="rb4"> 2
+              <input type="radio" class="form-check-input" value="2" name="rb4"> 2
             </label>
           </div>
 
           <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="rb4"> 3
+              <input type="radio" class="form-check-input" value="3" name="rb4"> 3
             </label>
           </div>
 
           <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="rb4"> 4
+              <input type="radio" class="form-check-input" value="4" name="rb4"> 4
             </label>
           </div>
 
           <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="rb4"> 5
+              <input type="radio" class="form-check-input" value="5" name="rb4"> 5
             </label>
           </div>
 
@@ -197,35 +204,35 @@
 
         <div class="form-check">
           <label class="form-check-label">
-            <input type="radio" class="form-check-input" style="margin-left:59vh;" name="rb5"> 1
+            <input type="radio" class="form-check-input" style="margin-left:59vh;" value="1" name="rb5"> 1
           </label>
         </div>
 
           <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="rb5"> 2
+              <input type="radio" class="form-check-input" value="2" name="rb5"> 2
             </label>
           </div>
 
           <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="rb5"> 3
+              <input type="radio" class="form-check-input" value="3" name="rb5"> 3
             </label>
           </div>
 
           <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="rb5"> 4
+              <input type="radio" class="form-check-input" value="4" name="rb5"> 4
             </label>
           </div>
 
           <div class="form-check">
             <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="rb5"> 5
+              <input type="radio" class="form-check-input" value="5" name="rb5"> 5
             </label>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary mt-3" style="margin-left:72vh;">Submit</button>
+        <button type="submit" name="submit" class="btn btn-primary mt-3" style="margin-left:72vh;">Submit</button>
       </div>
 
 </form>
