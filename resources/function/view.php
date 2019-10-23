@@ -36,10 +36,17 @@ public function viewAll(){
  ?>
 <html>
 <header>
+  <link href="resources/css/style.css" rel="stylesheet">
+
   <nav class="navbar navbar-expand-sm navbar-light">
     <div class="container">
-        <a class="navbar-brand mx-md-n5" href="#"><IMG SRC="resources/img/logo2.png" ALT="Logo" WIDTH=60 HEIGHT=60></a>
-          <h1 class="mx-auto">REPORT TABLE</h1>
+        <a class="navbar-brand" href="#"><IMG SRC="resources/img/logo2.png" ALT="Logo" WIDTH=60 HEIGHT=60></a>
+          <h1 class="" style="margin-left:60vh;">REPORT TABLE</h1>
+          <ul class="navbar-nav ml-auto navbar-light">
+            <form action="" method="GET" class="form-inline my-2 my-lg-0">
+              <li class="nav-item"><a class="nav-link text-dark mr-3 mt-sm-3" href="index.php">Register</a></li>
+            </form>
+          </ul>
     </div>
   </nav>
 </header>
