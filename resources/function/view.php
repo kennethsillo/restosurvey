@@ -44,7 +44,7 @@ public function viewAll(){
           <h1 class="" style="margin-left:45vh;">REPORT TABLE</h1>
           <ul class="navbar-nav ml-auto navbar-light">
             <form action="" method="GET" class="form-inline my-2 my-lg-0">
-              <li class="nav-item"><a class="nav-link text-dark mr-3 mt-sm-3" href="index.php">Register</a></li>
+              <li class="nav-item"><a class="nav-link text-dark mr-3 mt-sm-3" href="index.php">Survey</a></li>
             </form>
           </ul>
     </div>
