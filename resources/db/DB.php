@@ -3,7 +3,7 @@
 class DB{
 
   public $host = 'localhost';
-  public $dbname = 'tests';
+  public $dbname = 'restosurvey';
   public $user = 'root';
   public $password = '';
   public $pdo = null;
